@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Duo</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+    <h1>Trivia Duo</h1>
+    </header>
+    <main  class="contenedor">
+        <form class="preguntas">
+            <fieldset class="pregunta">
+                <legend>pregunta 1</legend>
+                <h3>La luna es...</h3>
+                <div class="boton-radio">
+                    <legend>
+                    <input type="radio" name="respuesta1" id="planeta" value="planeta"> Un planeta
+                    </legend>
+                    <legend>
+                    <input type="radio" name="respuesta1" id="satelite" value="satelite"> Un satélite
+                    </legend>
+                    <legend>
+                    <input type="radio" name="respuesta1" id="asteroide" value="asteroide"> Un asteroide
+                    </legend>
+                    </label>
+                </div>
+                    <div class="respuesta" id="textoMostrado"></div>  
+                <div>
+                    <h4>La respuesta es...</h4>
+                    <div  id="respuesta1" style="display: none;">
+                    <p class="respuesta">La luna es un satélite</p>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset  class="pregunta">
+                <legend>pregunta 2</legend>
+                <h3> ¿Cuál es el planeta más grande del Sistema Solar?</h3>
+                <div class="boton-radio">
+                    <legend>
+                    <input type="radio" name="respuesta2" id="saturno" value="saturno"> Saturno
+                    </legend>
+                    <legend>
+                    <input type="radio" name="respuesta2" id="urano" value="urano"> Urano
+                    </legend>
+                    <legend>
+                    <input type="radio" name="respuesta2" id="jupiter" value="jupiter"> Júpiter
+                    </legend>
+               </div>
+                    <div class="respuesta" id="textMostrado"></div> 
+                <div>
+                    <h4>La respuesta es...</h4>
+                    <div  id="respuesta2" style="display: none;">
+                    <p class="respuesta">Júpiter</p>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <div class="botones">
+            <div class="boton1">
+            <button class="boton"id="mostrarRespuestas">Respuesta</button>
+                </div>
+            <div class="boton2">
+                <button class="boton" id="Reiniciar">Reiniciar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Colaboracion: Bárbara Venegas || Elizabeth Araceli</p>
+        <p class="copyright">Todos los derechos Reservados 2023 &copy;</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

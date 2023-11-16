@@ -1,0 +1,135 @@
+:root{
+    --primario: #9C27B0;
+    --primarioOscuro: #89119D;
+    --secundario: #FFCE00;
+    --secundarioOscuro: rgb(233,287,2);
+    --tercero: #F2B8D8;
+    --blanco: #FFF;
+    --negro: #000;
+
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /*Globales*/
+
+  body{
+    background-color: var(--primario);
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  p{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+  }
+   h1, h2, h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: Arial, Helvetica, sans-serif; 
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.2rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+    height: 5rem;
+  }
+  fieldset{
+    border-radius: 1rem;
+    border-color: var(--primarioOscuro);
+    border-style: outset;
+  }
+  
+  .contenedor {
+    max-width: 80rem;
+    width: 95%;
+    margin: 0 auto;
+}
+  
+  /*Header*/
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /*Footer*/
+  .footer {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+  }
+  .footer p{
+    font-size: 1.5rem;
+  }
+  .preguntas{
+
+    @media (min-width: 768px) {
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+    }
+    
+  }
+  .pregunta {  
+    min-width: 30rem;
+    max-width: 60rem;
+  }
+
+  .respuesta {
+    color: var(--secundarioOscuro);
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  #planeta:hover, 
+  #satelite:hover,
+  #asteroide:hover,
+  #saturno:hover,
+  #urano:hover,
+  #jupiter:hover {
+    background-color: var(--secundarioOscuro);
+    cursor: pointer;
+  }
+  .botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .boton{
+    background-color: var(--primarioOscuro);
+    color: var(--secundario);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    margin-top: 2.5rem;
+    display: block;
+    border: none;
+    border-radius: 1rem;
+    align-items: center;
+  }
+
+  .boton:hover {
+    cursor: pointer;
+  }
+
+ 
