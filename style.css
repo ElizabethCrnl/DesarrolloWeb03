@@ -100,9 +100,12 @@ html {
   #saturno:hover,
   #urano:hover,
   #jupiter:hover {
-    background-color: var(--secundarioOscuro);
     cursor: pointer;
   }
+  .radio:hover {
+    background-color: var(--secundario);
+  }
+
   .botones{
     display: flex;
     flex-direction: column;
